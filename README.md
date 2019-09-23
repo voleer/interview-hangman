@@ -1,68 +1,50 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# hangman
 
-## Available Scripts
+Implement the classic [Hangman
+game](<https://en.wikipedia.org/wiki/Hangman_(game)>) in React.
 
-In the project directory, you can run:
+Feel free to use any tools and techniques that you would use in your
+day-to-day development.
 
-### `npm start`
+## Requirements
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- Generate a random word for the player to guess
+- Provide a mechanism for the player to input their letter guesses
+- When the player guesses a letter it should reveal matching instances of
+  that letter in the word
+- The game is won if the player is able to correctly guess all of the letters
+  in the word before making 10 incorrect guesses
+- If the player has guessed 10 times without revealing the word, the game is
+  lost
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+The UI should include the following, but feel free to add more if you see the
+need or would like to get creative.
 
-### `npm test`
+- A masked version of the word, with correct guesses revealed
+  - For example, if the word is “bittitan” and the player has guessed the
+    letter “t” then the word should be displayed as: \_ _ T T _ T \_ \_
+- An input mechanism of some kind which allows the player to input their next guess
+- An indication of which letters the player has already guessed incorrectly
+- An indication of how many remaining incorrect guesses the player has before
+  the game is over
+- An indication of win/loss state when the game is over
+- The ability to start a new game once the game is over
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Included
 
-### `npm run build`
+The following items are included in the base application. Please feel free to
+add additional libraries or tools if you feel they would help.
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Create React App
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+  - If needed, the original Create React App README is saved
+    [here](README_CRA.md) for reference
+  - We don't anticipate that you'll need enough additional configuration to
+    require ejecting, but feel free to do so if it helps
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- Component to draw the Hangman
+  ([src/components/Hangman/Hangman.jsx](src/components/Hangman/Hangman.jsx))
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+- React Storybook
+  - Run using `yarn storybook` to see already implemented components, or
+    write your own stories to help you implement your solution
