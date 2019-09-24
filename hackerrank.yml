@@ -5,6 +5,6 @@ configuration:
     default_open_files:
       - src/App.js
     project_menu:
-      run: yarn start
-      install: yarn install
-      test: yarn test
+      run: npm start
+      install: npm install
+      test: npm test

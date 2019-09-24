@@ -21,8 +21,8 @@ The UI should include the following, but feel free to add more if you see the
 need or would like to get creative.
 
 - A masked version of the word, with correct guesses revealed
-  - For example, if the word is “bittitan” and the player has guessed the
-    letter “t” then the word should be displayed as: \_ _ T T _ T \_ \_
+  - For example, if the word is “voleer” and the player has guessed the
+    letter “e” then the word should be displayed as: \_ \_ _ E E _
 - An input mechanism of some kind which allows the player to input their next guess
 - An indication of which letters the player has already guessed incorrectly
 - An indication of how many remaining incorrect guesses the player has before
@@ -46,5 +46,5 @@ add additional libraries or tools if you feel they would help.
   ([src/components/Hangman/Hangman.jsx](src/components/Hangman/Hangman.jsx))
 
 - React Storybook
-  - Run using `yarn storybook` to see already implemented components, or
+  - Run using `npm run storybook` to see already implemented components, or
     write your own stories to help you implement your solution
